@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>demo1</title>
+    <script type="text/javascript">
+        function dianji(){
+            var strarea=document.getElementById("tarea").value;
+            var winSave=window.open();
+            winSave.document.open("text","fy");
+            winSave.document.write(strarea);
+            winSave.document.execCommand("SavaAs",true,"newfile.txt");
+            window.location.href="#";
+            winSave.close()
+        }
+    </script>
+    <style>
+        #text1{
+            width:240px;
+        }
+        .div1{
+            width: 480px;;
+            height:480px;
+            border:1px solid red;
+        }
+#tarea {
+    width: 240px;
+}
+    </style>
+</head>
+<body>
+    <div class="div1">
+        <table>
+            <tr>
+                 <td><span>QQ邮箱</span></td>
+                  <td><input type="text" placeholder="请输入邮箱" id="text1"></td>
+            </tr>
+            <br><br>
+            <tr>
+                <td><span>拉黑原因</span></td>
+                <td><input type="textarea" placeholder="请输入拉黑原因" id="tarea" cols="20" rows="30"></td>
+            </tr>
+            <tr>
+                <td align="center"><input type="submit" value="提交" id="anniu1" onclick="dianji()"></td>
+                <td align="center"><input type="button" value="重置" ></td>
+            </tr>
+            <tr>
+                <td align="center"><input type="button" value="提交" ></td>
+            </tr>
+        </table>
+    </div>
+
+</body>
+</html>

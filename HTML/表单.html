@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <!-- 引入已经压缩的css文件 -->
+    <!-- 引入已经压缩的css文件 -->
+    <link rel="stylesheet" href="../ui/css/bootstrap.min.css">
+    <!-- 如果你想采用Bootstrap2的样式，那么引入该压缩css文件 -->
+    <link rel="stylesheet" href="../ui/css/bootstrap-theme.min.css">
+    <!-- 引入已经压缩的js文件 -->
+    <script src="../ui/js/bootstrap.min.js"></script>
+    <!-- 如果你想采用Bootstrap2的样式，那么引入该压缩css文件 -->
+    <title></title>
+</head>
+<body>
+    <form>
+        <div class="form-group">
+            <lable for="exampleInputEmail1">Email address</lable>
+            <input type="email" class="form-control" id="exampleInputEmail1" value="Email" placeholder="Email">
+        </div>
+        <div class="form-group">
+            <label for="exampleInputPmssword1">password</label>
+            <input type="password" class="form-control"  id="exampleInputPmssword1" placeholder="Password" >
+        </div>
+        <div class="form-group">
+            <label for="exampleInputFile">File Input</label>
+            <input type="file" id="exampleInputEmail1">
+            <p class="help-block">Example block-level help text here.</p>
+        </div>
+    </form>
+    <br>  <br>  <br>  <br>  <br>
+    <form class="form-inline">
+        <div class="form-group">
+            <label for="exampleInputName2">Name</label>
+            <input type="text" class="form-control" id="exampleInputName2" placeholder="Jane Doe">
+        </div>
+        <div class="form-group">
+            <label for="exampleInputEmail2">Email</label>
+            <input type="email" class="form-control" id="exampleInputEmail2" placeholder="jane.doe@example.com">
+        </div>
+        <button type="submit" class="btn btn-default">send invitation</button>
+    </form>
+    <form class="form-inline">
+        <div class="form-group">
+            <label class="sr-only" for="exampleInputEmail3">Email address</label>
+            <input type="email" class="form-control" id="exampleInputEmail3" placeholder="Email">
+        </div>
+        <div class="form-group">
+            <label class="sr-only" for="exampleInputPmssword3">Password</label>
+            <input type="password" class="form-control" id="exampleInputPmssword3"placeholder="Password">
+        </div>
+        <div class="checkbox">
+            <label>
+                <input type="checkbox">Remember me
+            </label>
+        </div>
+        <button type="submit" class="btn btn-default">Sign in</button>
+    </form>
+<br><br><br><br><br><br>
+    <form class="form-horizontal">
+        <div class="form-group">
+            <label for="exampleInputEmail3" class="col-sm-2 control-label">Email</label>
+            <div class="col-sm-10">
+                <input type="email" class="form-control col-sm-10" id="inpuremail3" placeholder="Email">
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="exampleInputPassword3" class="col-sm-2 control-label">Password</label>
+            <div class="col-sm-10">
+                <input type="PASSWORD" class="form-control col-sm-10" id="inpuremail3" placeholder="Password">
+            </div>
+        </div>
+        <div class="form-group ">
+        <div class="col-sm-offset-2 col-sm-10">
+
+                <lable><input type="checkbox">Remenber me</lable>
+        </div>
+        </div>
+        <div class="form-group">
+            <div class="col-sm-offset-2 col-sm-10">
+                <button type="submit" class="btn btn-default">Sign in</button>
+            </div>
+        </div>
+        <br><br>
+        <input type="email" class="form-control">
+        <input type="submit">
+        <br><br><br>
+        <div class="checkbox">
+            <label>
+                <input type="checkbox" value="">
+                选项1
+            </label>
+        </div>
+        <div class="checkbox disabled" >
+            <label>
+                <input type="checkbox" value="">
+                选项2
+            </label>
+        </div>
+        <div class="radio">
+        <label>
+            <input type="radio" name="optionRadios" id="optionRasios1" value="option1" checked>
+            选项1
+        </label>
+            <div class="radio">
+                <label>
+                    <input type="radio" name="optionRadios" id="optionRasios2" value="option2">
+                    选项2
+                </label>
+            </div>
+    </div>
+        <div class="radio disabled">
+            <label>
+                <input type="radio" name="optionRadios" id="optionRasios3" value="option3" class="disabled">
+                选项3
+            </label>
+        </div>
+        <br><br><br>
+        <div>
+        <label class="checkbox-inline">
+            <input type="checkbox" id="inlineCheckbox1" value="option1">
+            1
+        </label>
+        <label class="checkbox-inline">
+            <input type="checkbox" id="inlineCheckbox2" value="option2">
+            2
+        </label>
+        <label class="checkbox-inline">
+            <input type="checkbox" id="inlineCheckbox3" value="option3">
+            3
+        </label>
+        </div>
+        <label class="radio-inline">
+            <input type="radio" name="inlineRadio1" id="inlineRadio1" value="option1" >
+            1
+        </label>
+        <label class="radio-inline">
+            <input type="radio" name="inlineRadio2" id="inlineRadio2" value="option2" checked >
+            1
+        </label>
+        <label class="radio-inline">
+            <input type="radio" name="inlineRadio3" id="inlineRadio3" value="option3" >
+            1
+        </label>
+        <br> <br> <br>
+        <select class="form-control">
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+        </select>
+        <br><br><br>
+    </form>
+    <form class="form-horizontal">
+        <div class="form-group">
+            <label class="col-sm-2 control-label">Email</label>
+            <div class="col-sm-10">
+                <p class="form-control-static">1083797056@qq.com</p>
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="col-sm-2 control-label">Password</label>
+            <div class="col-sm-10">
+                <input type="password"placeholder="Password" class="form-control">
+            </div>
+        </div>
+    </form>
+    <br> <br> <br>
+    <form class="form-inline">
+        <div class="form-group">
+            <label class="sr-only">Email</label>
+            <div><p class="form-control-static">1084797056@qq.com</p></div>
+        </div>
+        <div class="form-group">
+            <label class="sr-only">password</label>
+            <input type="password" placeholder="password" class="form-control">
+        </div>
+        <button type="submit" class="btn btn-default">submit</button>
+    </form>
+    <input type="text" placeholder="Text" class="form-control"box-shadow>
+<br> <br> <br>
+<input type="text" class="form-control" placeholder="disabled input here" disabled>
+    <br><br><br><br>
+    <form>
+        <fieldset disabled>
+            <div class="form-group">
+            <label>Disabled input</label>
+            <input type="text" class="form-control" placeholder="Disabled">
+        </div>
+            <div class="form-group">
+                <label>Disabled select</label>
+                <input type="text" class="form-control" placeholder="Disabled select">
+            </div>
+            <div class="checkbox">
+                <label><input type="checkbox">cant check this</label>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </fieldset>
+        <br> <br> <br>
+        <input class="form-control" type="text" placeholder="Readonly" readonly>
+    </form>
+
+</html>

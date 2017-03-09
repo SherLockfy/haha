@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+        .csdiv{
+            background-color: yellow;
+            width:1000px;
+            height:1000px;
+        }
+        #idiv{
+            background-color: yellow;
+        }
+        .csoverlop2{
+            background-color: pink;
+            width:50%;
+            height:50%;
+        }
+    </style>
+</head>
+<body>
+  <script type="text/javascript">
+      function chujian(){
+          //创建最外层的div
+        var overlop=document.createElement("div");
+        overlop.setAttribute("class","csdiv");
+        overlop.setAttribute("id","idiv");
+          document.getElementById("idiv");
+        document.body.appendChild(overlop);
+          //创建div里的内容
+          var node=document.createTextNode("我是div里的内容");
+          overlop.appendChild(node);
+          //创建第一个div里面的div
+          var overlop2=document.createElement("div");
+          overlop2.setAttribute("class","csoverlop2");
+          overlop2.setAttribute("id","idoverlop2");
+          overlop.appendChild(overlop2);
+          //创建一个按钮
+          var btn=document.createElement("button");
+          btn.setAttribute("id","idbtn");
+          overlop2.appendChild(btn);
+          var btnText=document.createTextNode("我是一个按钮");
+          btn.appendChild(btnText);
+          document.getElementById("btn").onclick=tanchu();
+          function tanchu(){
+              window.alert("弹出成功");
+          }
+      }
+      window.onload= function () {
+          chujian();
+      }
+  </script>
+
+
+
+</body>
+</html>
